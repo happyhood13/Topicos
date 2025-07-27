@@ -1,0 +1,219 @@
+/* Fondo visual tipo neón */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: radial-gradient(circle at center, #000022, #000000);
+  background-attachment: fixed;
+  background-size: cover;
+  color:rgb(0, 146, 230);
+  scroll-behavior: smooth;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+header {
+  background: linear-gradient(to right, #020202, #222244);
+  color: white;
+  padding: 2em;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+section {
+  padding: 2em;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+#banner {
+  background: linear-gradient(145deg, #111144, #000022);
+  color: #fff;
+  padding: 3em 2em;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* Tarjetas animadas */
+.producto {
+  background-color: #222;
+  padding: 1em;
+  margin: 2em auto;
+  border-radius: 12px;
+  max-width: 320px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,0,255,0.4);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+  transform: scale(1.03);
+}
+
+/* Botón interactivo */
+button {
+  background-color: #00ffff;
+  border: none;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #00ffff;
+  background-color: #00dddd;
+}
+
+/* Footer elegante */
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 2em;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+
+
+css
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.carrito-visual {
+  margin-top: 1em;
+  font-size: 1em;
+  color: #00ffff;
+}
+
+.carrito-boton {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.carrito-boton:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #00ffff;
+  background-color: #00dddd;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.producto {
+  background-color: white;
+  padding: 1em;
+  margin: 2em auto;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.carrito-boton {
+  display: inline-block;
+  background-color: #00ffff;
+  color: #000;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carrito-boton:hover {
+  transform: scale(1.05);
+  background-color: #00dddd;
+}
+
+.formulario-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+  margin: 2em auto;
+  text-align: left;
+}
+
+.formulario-carrito label {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #00ffff;
+}
+
+.formulario-carrito input,
+.formulario-carrito textarea,
+.formulario-carrito select {
+  padding: 0.6em;
+  border-radius: 8px;
+  border: none;
+  background-color: #eee;
+  color: #000;
+}
+
+.formulario-carrito button {
+  align-self: center;
+  background-color: #00ffff;
+  color: #000;
+  padding: 0.7em 1.5em;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.formulario-carrito button:hover {
+  background-color: #00dddd;
+  transform: scale(1.05);
+}

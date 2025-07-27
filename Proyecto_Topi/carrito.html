@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+   
+    <h1>🛒 Carrito de Compras</h1>
+     <img src="img/logo.png" alt="Logo" class="logo"/>
+    <nav>
+      <a href="productos.html">Seguir comprando</a>
+      <a href="index.html">Inicio</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Detalles del pedido</h2>
+    <form class="formulario-carrito">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="direccion">Dirección de entrega:</label>
+      <textarea id="direccion" name="direccion" rows="3" required></textarea>
+
+      <label for="pago">Método de pago:</label>
+      <select id="pago" name="pago" required>
+        <option value="">Seleccione una opción</option>
+        <option value="tarjeta">Tarjeta de crédito o débito</option>
+        <option value="paypal">PayPal</option>
+        <option value="transferencia">Transferencia bancaria</option>
+      </select>
+
+      <button type="submit">Confirmar pedido</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mi Tienda Futurista</p>
+  </footer>
+
+</body>
+</html>
